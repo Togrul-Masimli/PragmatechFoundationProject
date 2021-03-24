@@ -60,7 +60,6 @@ body {
 }
 
 .container {
-    height: 100vh;
     background: #fff;
 }
 
@@ -127,23 +126,40 @@ ul li a:hover {
 
 .container .content {
     display: flex;
-    flex-direction: column;
 }
 
-.container .content .news-container {
+.container .content .news-content {
+    margin-bottom: 20px;
+}
+
+.container .content .news-content .news-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
-.container .content .news-container .news {
+.container .content .news-content .news-container .news {
     height: 390px;
     margin-right: 20px;
     margin-top: 20px;
 }
 
-.container .content .news-container .news img {
+.container .content .news-content .news-container .news img,
+.container .content .news-content .news-container .news .h4:hover {
+    cursor: pointer;
+}
+
+.container .content .news-content .news-container .news img {
     height: 225px;
     width: 100%;
     object-fit: cover;
+}
+
+.container .content .right figure {
+    width: 300px;
+    margin-top: 150px;
+}
+
+.container .content .right figure img {
+    width: 100%;
 }
