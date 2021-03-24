@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #BB1919;
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo figure.menu-logo img {
+    width: 100%;
+    height: 56px;
+    object-fit: cover;
+    margin-left: 110px;
+}
+
+.header .logo .logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo .logo-text p {
+    margin-left: 220px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 200px;
+}
+
+ul li {
+    margin-right: 30px;
+}
+
+ul li a {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #383838;
+    border-bottom: 5px solid #f5f5f5;
+}
+
+.container .content .news-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.container .content .news-container .news {
+    height: 390px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.container .content .news-container .news .news-image {
+    height: 225px;
+}
+
+.container .content .news-container .news .news-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .content .news-container .news h4 {
+    margin-top: -20px;
+}
+
+.container .content .reklam {
+    height: 900px;
+    background: red;
+    float: left;
+}

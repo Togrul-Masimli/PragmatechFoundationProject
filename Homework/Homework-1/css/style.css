@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1300px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.column {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.course-name {
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    color: #3c3b37;
+}
+
+.author {
+    margin-bottom: 4px;
+    color: #73726c;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fs-system {
+    font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+figure {
+    width: 240px;
+    height: 135px;
+}
+
+.js {
+    width: 100%;
+}
+
+.ml {
+    width: 100%;
+}
+
+.flask {
+    width: 100%;
+}
