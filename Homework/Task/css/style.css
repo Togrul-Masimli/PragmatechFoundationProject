@@ -7,7 +7,6 @@
 html,
 body {
     height: 100%;
-    background: #f2f2f2;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -60,48 +59,64 @@ body {
 }
 
 .container {
-    background: #fff;
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    padding: 7px 14px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 90px;
+    height: 70px;
     background-color: #07274A;
 }
 
-.header .logo {
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header .logo figure.menu-logo img {
+.header .container .logo figure.menu-logo img {
     width: 100%;
-    height: 56px;
+    height: 35px;
     object-fit: cover;
-    margin-left: 110px;
+    margin-top: 9px;
 }
 
-.header .logo .logo-text {
+.header .container .logo .logo-text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header .logo .logo-text p {
-    margin-left: 220px;
+.header .container .logo .logo-text p {
     color: #fff;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+    transform: translate(0, -5px);
+}
+
+.header .container .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
 }
 
 ul {
     display: flex;
     list-style: none;
-    margin-left: 200px;
 }
 
 ul li {
@@ -120,7 +135,7 @@ ul li a {
 
 ul li a:hover {
     color: #a1a0a0;
-    border-bottom: 5px solid #f5f5f5;
+    border-bottom: 4px solid #f5f5f5;
 }
 
 .container .content {
@@ -134,11 +149,10 @@ ul li a:hover {
 .container .content .news-content .news-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
 }
 
 .container .content .news-content .news-container .news {
-    height: 390px;
+    height: 420px;
     margin-right: 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -182,20 +196,33 @@ ul li a:hover {
     width: 100%;
 }
 
-.container .form-path {
+.form-path {
     background: #07274A;
     height: 200px;
     margin-top: 20px;
-    display: flex;
     color: #fff;
     padding: 20px;
-    align-items: center;
 }
 
-.container .form-path .form {
+.form-path .container {
+    display: flex;
+}
+
+.form-path .container .form {
     margin-left: 200px;
 }
 
-.container .form-path .form .form-box label {
+.form-path .container .form .form-box {
+    margin-bottom: 10px;
+}
+
+.form-path .container .form .form-box label {
     margin-right: 20px;
+}
+
+.form-path .container .form .form-box input[type="text"],
+.form-path .container .form .form-box input[type="email"] {
+    padding: 6px;
+    width: 250px;
+    float: right;
 }

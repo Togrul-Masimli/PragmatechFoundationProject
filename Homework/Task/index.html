@@ -10,29 +10,31 @@
 </head>
 
 <body>
-    <div class="header col-12">
-        <div class="logo col-1">
-            <figure class="menu-logo">
-                <a href="#">
-                    <img src="img/bbc-seeklogo.com.svg" alt="logo">
-                </a>
-            </figure>
-            <div class="logo-text col-11">
-                <p>Azerbaijan</p>
+    <div class="header">
+        <div class="container col-12">
+            <div class="logo col-1">
+                <figure class="menu-logo">
+                    <a href="#">
+                        <img src="img/bbc-seeklogo.com.svg" alt="logo">
+                    </a>
+                </figure>
+                <div class="logo-text col-11">
+                    <p>Azerbaijan</p>
+                </div>
             </div>
-        </div>
-        <div class="menu col-11">
-            <ul>
-                <li><a href="#">Baş Səhifə</a></li>
-                <li><a href="#">Siyasət</a></li>
-                <li><a href="#">İqtisadiyyat</a></li>
-                <li><a href="#">Cəmiyyət</a></li>
-                <li><a href="#">Şou-biznes</a></li>
-                <li><a href="#">Müharibə</a></li>
-                <li><a href="#">Kriminal</a></li>
-                <li><a href="#">Mədəniyyət</a></li>
-                <li><a href="#">Dünya</a></li>
-            </ul>
+            <div class="menu col-11">
+                <ul>
+                    <li><a href="#">Baş Səhifə</a></li>
+                    <li><a href="#">Siyasət</a></li>
+                    <li><a href="#">İqtisadiyyat</a></li>
+                    <li><a href="#">Cəmiyyət</a></li>
+                    <li><a href="#">Şou-biznes</a></li>
+                    <li><a href="#">Müharibə</a></li>
+                    <li><a href="#">Kriminal</a></li>
+                    <li><a href="#">Mədəniyyət</a></li>
+                    <li><a href="#">Dünya</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container col-12">
@@ -82,20 +84,14 @@
                 </figure>
             </div>
         </div>
-        <div class="form-path col-12">
+    </div>
+    <div class="form-path">
+        <div class="container col-12">
             <div class="form-text col-6">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vitae quia soluta veniam velit cupiditate similique quisquam ut? Magnam sint minus nihil possimus, debitis cumque voluptate maiores consequatur nulla quod. Lorem ipsum dolor
                     sit amet, consectetur adipisicing elit. Sunt minus accusamus velit. Laborum vero eveniet optio dolores. Temporibus dolores fugit, excepturi harum alias, soluta magnam fuga sunt, sapiente dolorum cupiditate!</p>
             </div>
             <div class="form col-6">
-                <div class="form-box">
-                    <label for="fullName">Adinizi ve Soyadinizi qeyd edin:</label>
-                    <input type="text" name="fullName">
-                </div>
-                <div class="form-box">
-                    <label for="email">E-mail adresinizi qeyd edin:</label>
-                    <input type="email" name="email">
-                </div>
                 <div class="form-box">
                     <label for="category">Kategoriyanizi secin:</label>
                     <select name="category">
@@ -103,6 +99,19 @@
                         <option value="Corona">Gunluk yoluxma</option>
                         <option value="Valyuta">Valyuta</option>
                     </select>
+                </div>
+                <div class="form-box">
+                    <label for="fullName">Adinizi ve Soyadinizi qeyd edin:</label>
+                    <input type="text" name="fullName" placeholder="Ad Soyad" required>
+                </div>
+                <div class="form-box">
+                    <label for="email">E-mail adresinizi qeyd edin:</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="form-box">
+                    <label for="submit">Tesdiqle:</label>
+                    <input type="submit" name="submit" class="btn">
                 </div>
             </div>
         </div>
