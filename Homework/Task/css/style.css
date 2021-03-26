@@ -7,7 +7,7 @@
 html,
 body {
     height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .col-1 {
@@ -129,7 +129,7 @@ ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -152,7 +152,7 @@ ul li a:hover {
 }
 
 .container .content .news-content .news-container .news {
-    height: 420px;
+    height: 430px;
     margin-right: 20px;
     margin-top: 20px;
     border-radius: 5px;
@@ -198,7 +198,7 @@ ul li a:hover {
 
 .form-path {
     background: #07274A;
-    height: 200px;
+    height: 250px;
     margin-top: 20px;
     color: #fff;
     padding: 20px;
@@ -206,6 +206,13 @@ ul li a:hover {
 
 .form-path .container {
     display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.form-path .container .form-text {
+    word-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 .form-path .container .form {
@@ -225,4 +232,9 @@ ul li a:hover {
     padding: 6px;
     width: 250px;
     float: right;
+}
+
+.footer {
+    height: 250px;
+    background: #07274A;
 }
