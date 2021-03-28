@@ -17,12 +17,6 @@ body {
     margin: 0 auto;
 }
 
-.btn {
-    width: 100px;
-    height: 30px;
-    padding: 7px 14px;
-}
-
 .header {
     height: 70px;
     background-color: #07274A;
@@ -150,6 +144,22 @@ ul li a:hover {
     width: 100%;
 }
 
+.btn {
+    background: #0066a2;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #0066a2;
+    padding: 8px 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 0;
+}
+
 .form-path {
     background: #07274A;
     height: 250px;
@@ -198,7 +208,7 @@ ul li a:hover {
     align-items: center;
 }
 
-.footer .container .footer-logo img {
+.footer .container .footer-logo a img {
     height: 150px;
     margin: 50px 0;
 }
@@ -239,6 +249,39 @@ ul li a:hover {
     margin-right: -8px;
 }
 
+.tooltip.ins:after {
+    content: "";
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-right: 1px;
+}
+
+.tooltip.twt:after {
+    content: "";
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-right: 1px;
+}
+
 .footer .container .social a:hover .tooltip {
     display: inline-block;
+}
+
+.footer .container .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .container .contact p {
+    color: #fff;
+    margin-bottom: 7px;
 }
