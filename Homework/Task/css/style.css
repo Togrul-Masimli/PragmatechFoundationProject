@@ -1,3 +1,5 @@
+@import 'grid.css';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
 * {
     margin: 0;
     padding: 0;
@@ -8,54 +10,6 @@ html,
 body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-}
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
 }
 
 .container {
@@ -235,6 +189,56 @@ ul li a:hover {
 }
 
 .footer {
-    height: 250px;
+    height: 255px;
     background: #07274A;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer .container .footer-logo img {
+    height: 150px;
+    margin: 50px 0;
+}
+
+.footer .container .social a {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.footer .container .social a i {
+    font-size: 40px;
+}
+
+.tooltip {
+    width: 170px;
+    padding: 6px;
+    text-align: center;
+    position: absolute;
+    bottom: 125%;
+    left: -170%;
+    display: none;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+}
+
+.tooltip:after {
+    content: "";
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-right: -8px;
+}
+
+.footer .container .social a:hover .tooltip {
+    display: inline-block;
 }
