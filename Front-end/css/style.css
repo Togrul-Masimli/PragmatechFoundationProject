@@ -49,7 +49,7 @@ header {
 
 a.logo {
     display: inline-block;
-    margin-right: 80px;
+    margin-right: 81px;
 }
 
 a.logo img {
@@ -70,25 +70,53 @@ a.logo img {
 .navbar a {
     font-size: 14px;
     color: #D5D9DA;
-    transition: 0.4s
+    transition: 0.4s;
 }
 
 .navbar a:hover {
     color: #007bff;
 }
 
-.search {
+.search-area {
+    width: 250px;
+    height: 40px;
+    margin-top: 15px;
     position: relative;
+    margin-left: 62px;
 }
 
-.search input {
-    display: block;
-    padding: 12px;
+.search-input {
+    width: 100%;
+    padding: 12px 45px 12px 19px;
+    outline: none;
+    background-color: #424447;
+    border: none;
+    border-radius: 5px;
+    color: #FEFEFE;
+}
+
+::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    color: #D5D9DA;
 }
 
 .nav-search-button {
     position: absolute;
+    background-color: transparent;
+    color: #dadedf;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 42px;
+    outline: none;
+    border: none;
+    cursor: pointer;
     top: 0;
-    right: 0;
+    right: 19px;
     bottom: 0;
+    transition: 0.4s;
+}
+
+.nav-search-button:hover {
+    color: #007bff;
 }
