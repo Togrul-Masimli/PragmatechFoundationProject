@@ -1,0 +1,94 @@
+@import url(grid.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    overflow: scroll;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Common Styles */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #2D2F32;
+    display: flex;
+}
+
+.nav-left {
+    display: flex;
+}
+
+a.logo {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+a.logo img {
+    width: 60px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 22px;
+}
+
+.navbar li {
+    margin-right: 40px;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: #D5D9DA;
+    transition: 0.4s
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    display: block;
+    padding: 12px;
+}
+
+.nav-search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
