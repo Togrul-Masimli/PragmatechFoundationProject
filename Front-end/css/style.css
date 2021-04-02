@@ -20,6 +20,7 @@ body {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 
@@ -174,4 +175,130 @@ a.logo img {
     font-size: 14px;
     padding-left: 10px;
     font-weight: 600;
+}
+
+
+/* Content */
+
+.content {
+    padding-top: 39px;
+}
+
+.user-info {
+    border-top: 3px solid #3796F6;
+    border-radius: 3px;
+}
+
+.box {
+    width: 295px;
+    background-color: #fff;
+}
+
+.common-info {
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #E7EBEE;
+}
+
+.common-info figure {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.common-info figure img {
+    border-radius: 50%;
+}
+
+.user-name-span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #364E65;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.speciality {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8599ab;
+}
+
+
+/* Buttons */
+
+.button-field {
+    display: flex;
+    height: 80px;
+    border-bottom: 2px solid #E7EBEE;
+    padding: 20px;
+}
+
+.button-field a {
+    width: 117px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.button-field a.btn-project {
+    background-color: #3796F6;
+    margin-right: 20px;
+}
+
+.button-field a.btn-project:hover {
+    color: #3796f6;
+    background: linear-gradient( 45deg, rgba(55, 150, 246, 0.5) 0%, rgba(55, 150, 246, 0.05) 100%);
+}
+
+.button-field a.btn-job {
+    background-color: #FA7268;
+}
+
+.button-field a.btn-job:hover {
+    color: #fa7268;
+    background: linear-gradient( 45deg, rgba(250, 114, 104, 0.5) 0%, rgba(250, 114, 104, 0.05) 100%);
+}
+
+
+/* Follow counts */
+
+.follow {
+    display: flex;
+}
+
+.count-common {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    font-size: 14px;
+    color: #8599ab;
+    padding: 15px;
+}
+
+.following {
+    margin-bottom: 5px;
+}
+
+.followers {
+    margin-bottom: 5px;
+}
+
+.count {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 100%;
+    color: #364e65;
 }
