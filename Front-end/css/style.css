@@ -69,6 +69,7 @@ a.logo img {
 
 .navbar a {
     font-size: 14px;
+    font-weight: 400;
     color: #D5D9DA;
     transition: 0.4s;
 }
@@ -77,12 +78,17 @@ a.logo img {
     color: #007bff;
 }
 
+.nav-right {
+    display: flex;
+}
+
 .search-area {
     width: 250px;
     height: 40px;
     margin-top: 15px;
     position: relative;
     margin-left: 62px;
+    margin-right: 126px;
 }
 
 .search-input {
@@ -119,4 +125,53 @@ a.logo img {
 
 .nav-search-button:hover {
     color: #007bff;
+}
+
+.header-contact a {
+    display: inline-block;
+    margin-top: 22px;
+    margin-right: 27px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.4s;
+    position: relative;
+}
+
+.header-contact a::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 3px;
+    right: -3px;
+    background-color: #3796f6;
+    border-radius: 50%;
+    border: 1px solid #dadedf;
+}
+
+.header-contact a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.user-img {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.user-img img {
+    border-radius: 50%;
+}
+
+.user-name {
+    color: #dadedf;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
 }
