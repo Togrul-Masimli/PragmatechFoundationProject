@@ -15,7 +15,6 @@ body {
     background-color: #FAFAFA;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    overflow: scroll;
 }
 
 img {
@@ -185,13 +184,14 @@ a.logo img {
 }
 
 .user-info {
+    height: 424px;
     border-top: 3px solid #3796F6;
     border-radius: 3px;
     box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
 }
 
 .box {
-    width: 297px;
+    width: 23%;
     background-color: #fff;
     border-bottom: 1px solid rgba(133, 153, 171, 0.2);
     border-left: 1px solid rgba(133, 153, 171, 0.2);
@@ -332,4 +332,202 @@ a.logo img {
 
 .view-profile:hover {
     color: #fa7268;
+}
+
+
+/* Post */
+
+.post {
+    width: 628px;
+    background-color: #fff;
+    margin-left: 30px;
+    border-radius: 3px;
+    box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
+    padding: 20px;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+}
+
+.post-user-img img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.post-header h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-header h5 a {
+    color: #364e65;
+    transition: 0.4s;
+}
+
+.post-header h5 a:hover {
+    color: #fa7268;
+}
+
+.post-header p {
+    font-size: 12px;
+    color: #8599ab;
+}
+
+.post-header .dots {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #8599ab;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.post-icons-left {
+    display: flex;
+}
+
+.post-icons span {
+    font-size: 14px;
+    color: #8599ab;
+    line-height: 24px;
+    margin-right: 15px;
+}
+
+.post-icons .post-company i {
+    font-size: 14px;
+    color: #3796f6;
+    line-height: 24px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+
+.post-icons .post-location i {
+    font-size: 14px;
+    color: #5bceae;
+    margin-right: 4px;
+    line-height: 24px;
+    margin-top: 1px;
+}
+
+.post-icons .post-icons-right {
+    display: flex;
+}
+
+.post-icons .post-icons-right .post-actions a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: 0.4s;
+    position: relative;
+    margin-left: 15px;
+}
+
+.btn-green {
+    background-color: #5bceae;
+}
+
+.btn-red {
+    background-color: #EC547A;
+}
+
+.post-icons .post-icons-right .post-actions i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.post-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.post-title a {
+    color: #364e65;
+    transition: 0.4s;
+}
+
+.post-title a:hover {
+    color: #fa7268;
+}
+
+.post-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-options span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    padding: 0 10px;
+    border-radius: 4px;
+    color: #fa7268;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 20px;
+    background: linear-gradient( 45deg, rgba(250, 114, 104, 0.35) 0%, rgba(250, 114, 104, 0.05) 100%);
+}
+
+.post-options p {
+    font-size: 14px;
+    color: #364e65;
+    font-weight: 600;
+}
+
+.post-description {
+    margin-bottom: 20px;
+}
+
+.post-description p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #8599ab;
+}
+
+.post-tags a {
+    position: relative;
+    font-size: 13px;
+    color: #8599ab;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-left: 11px;
+}
+
+.post-tags a::before {
+    content: '#';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+}
+
+.post-status {
+    border-top: 1px solid rgba(133, 153, 171, 0.2);
+}
+
+.post-comments {
+    display: flex;
+}
+
+.post-comments .like-comment a {
+    display: inline-flex;
 }
