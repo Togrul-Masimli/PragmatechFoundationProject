@@ -437,8 +437,13 @@ a.logo img {
     margin-left: 15px;
 }
 
-.btn-green {
+.post-actions .btn-green {
     background-color: #5bceae;
+}
+
+.post-actions .btn-green:hover {
+    background: linear-gradient( 45deg, rgba(91, 206, 174, 0.5) 0%, rgba(91, 206, 174, 0.05) 100%);
+    color: #5bceae;
 }
 
 .btn-red {
@@ -530,4 +535,84 @@ a.logo img {
 
 .post-comments .like-comment a {
     display: inline-flex;
+}
+
+
+/* End of the post styles */
+
+
+/* Hot projects styles */
+
+.hot-projects {
+    width: 296px;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
+    border-radius: 4px;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.sidebox-title {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    color: #364e65;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(133, 153, 171, 0.2);
+}
+
+.sidebox-content {
+    padding: 20px;
+}
+
+.sidebox-job {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sidebox-job-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.sidebox-job-title a,
+.sidebox-job-title span {
+    font-size: 14px;
+    color: #364e65;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.sidebox-job-title a {
+    transition: 0.4s;
+}
+
+.sidebox-job-speciality i {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-right: 5px;
+    color: #3796f6;
+    line-height: 24px;
+}
+
+.sidebox-job-speciality span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #8599ab;
+}
+
+.sidebox .view-profile {
+    border-top: 1px solid rgba(133, 153, 171, 0.2);
+}
+
+.sidebox-job:last-child {
+    margin-bottom: 0;
 }
