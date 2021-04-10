@@ -508,12 +508,15 @@ a.logo img {
     color: #8599ab;
 }
 
+.post-tags {
+    margin-bottom: 20px;
+}
+
 .post-tags a {
     position: relative;
     font-size: 13px;
     color: #8599ab;
     margin-right: 15px;
-    margin-bottom: 15px;
     padding-left: 11px;
 }
 
@@ -526,6 +529,41 @@ a.logo img {
 }
 
 .post-status {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(133, 153, 171, 0.2);
+}
+
+.heart-comment {
+    display: flex;
+    align-items: center;
+}
+
+.like-comment {
+    margin-right: 20px;
+}
+
+.like-comment i {
+    margin-right: 7px;
+    font-size: 14px;
+    line-height: 14px;
+    transition: 0.4s;
+}
+
+.like-comment span {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.like-comment a {
+    display: flex;
+    align-items: center;
+    color: #8599ab;
+}
+
+.post-status {
     border-top: 1px solid rgba(133, 153, 171, 0.2);
 }
 
@@ -535,6 +573,21 @@ a.logo img {
 
 .post-comments .like-comment a {
     display: inline-flex;
+}
+
+.post-views {
+    color: #8599ab;
+}
+
+.post-views i {
+    font-size: 14px;
+    margin-right: 5px;
+    line-height: 14px;
+}
+
+.post-views span {
+    font-size: 14px;
+    line-height: 14px;
 }
 
 
@@ -593,6 +646,10 @@ a.logo img {
 
 .sidebox-job-title a {
     transition: 0.4s;
+}
+
+.sidebox-job-title a:hover {
+    color: #fa7268;
 }
 
 .sidebox-job-speciality i {
