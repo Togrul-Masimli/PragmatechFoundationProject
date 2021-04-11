@@ -184,14 +184,17 @@ a.logo img {
 }
 
 .user-info {
-    height: 424px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     border-top: 3px solid #3796F6;
     border-radius: 3px;
     box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
 }
 
 .box {
-    width: 23%;
+    width: 296px;
+    margin-bottom: 20px;
     background-color: #fff;
     border-bottom: 1px solid rgba(133, 153, 171, 0.2);
     border-left: 1px solid rgba(133, 153, 171, 0.2);
@@ -596,9 +599,9 @@ a.logo img {
 
 /* Hot projects styles */
 
-.hot-projects {
+.sidebox {
     width: 296px;
-    height: 100%;
+    height: auto;
     position: relative;
     border: 1px solid rgba(133, 153, 171, 0.2);
     box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
@@ -672,4 +675,73 @@ a.logo img {
 
 .sidebox-job:last-child {
     margin-bottom: 0;
+}
+
+
+/* Best Candidates */
+
+.sidebox-candidates {
+    height: auto;
+    margin-left: 0;
+}
+
+.sidebox-user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sidebox-user-img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.sidebox-user-img img {
+    border-radius: 50%;
+}
+
+.sidebox-user-title h5 {
+    font-size: 14px;
+    color: #364e65;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 100%;
+}
+
+.sidebox-user-title h5 a {
+    color: #364e65;
+    transition: 0.4s;
+}
+
+.sidebox-user-title h5 a:hover {
+    color: #fa7268;
+}
+
+.sidebox-user-title p {
+    font-size: 13px;
+    color: #8599ab;
+    line-height: 100%;
+}
+
+.user-title-price {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 14px;
+    color: #364e65;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.sidebox-user:last-child {
+    margin-bottom: 0;
+}
+
+.sidebox-candidates-right {
+    margin-left: 50px;
 }
