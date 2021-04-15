@@ -1,0 +1,1 @@
+const accordionButton = document.getElementsByClassName("accordion");
