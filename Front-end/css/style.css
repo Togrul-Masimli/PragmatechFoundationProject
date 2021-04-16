@@ -421,6 +421,10 @@ a.logo img {
     display: flex;
 }
 
+.post-actions {
+    display: flex;
+}
+
 .post-icons .post-icons-right .post-actions a {
     display: inline-flex;
     justify-content: center;
@@ -431,7 +435,7 @@ a.logo img {
     font-size: 18px;
     transition: 0.4s;
     position: relative;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .post-actions .btn-green {
@@ -445,6 +449,24 @@ a.logo img {
 
 .btn-red {
     background-color: #EC547A;
+}
+
+.bid-now {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 80px !important;
+    padding: 0 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #3796F6;
+}
+
+.bid-now span {
+    color: #fff;
+    font-size: 13px;
 }
 
 .post-icons .post-icons-right .post-actions i {
