@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/project.css">
+    <title>Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 nav-left">
+                    <a href="#" class="logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Companies</a></li>
+                        <li><a href="#">Profiles</a></li>
+                        <li><a href="#">Pages</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 nav-right">
+                    <div class="div-search">
+                        <form action="#" class="search-area">
+                            <input type="text" placeholder="Search..." class="search-input">
+                            <button type="submit" class="nav-search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        </form>
+                    </div>
+                    <div class="header-contact">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </div>
+                    <div class="header-user">
+                        <a href="#" class="user-img">
+                            <img src="img/user5.jpg" alt="user">
+                        </a>
+                        <a href="#" class="user-name"><span>John Doe</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="projects-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="page-to-page">
+                            <li class="page_home"><a href="#">Home</a></li>
+                            <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                            <li class="page_projects"><a href="#">Post a project</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="form">
+                    <div class="row">
+                        <div class="col-9 form-area">
+                            <h2 class="form-title">New project</h2>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Project name:</label>
+                                <input type="text" name="name" id="name" class="form-input" placeholder="Type name">
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="form-label">Description:</label>
+                                <textarea name="description" id="description" class="form-textarea" placeholder="Type description"></textarea>
+                            </div>
+                            <div class="form-selects">
+                                <div class="form-group category">
+                                    <label for="category" class="form-label">Category:</label>
+                                    <select name="category" id="category" class="form-select">
+                                <option value="0">Category 1</option>
+                                <option value="1">Category 2</option>
+                                <option value="2">Category 3</option>
+                            </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="level" class="form-label">Experience level:</label>
+                                    <select name="level" id="level" class="form-select">
+                                <option value="0">Level 1</option>
+                                <option value="1">Level 2</option>
+                                <option value="2">Level 3</option>
+                            </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="category" class="form-label">Budget:</label>
+                                <select name="category" id="category" class="form-select">
+                                <option value="0">Fixed Price</option>
+                                <option value="1">Hourly Price</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-min-max">
+                                    <input type="text" class="form-input min" placeholder="Min">
+                                    <input type="text" class="form-input max" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location" class="form-label">Location:</label>
+                                <input type="text" name="location" id="location" class="form-input" placeholder="Type adress">
+                            </div>
+                            <div class="form-group">
+                                <label for="skills" class="form-label">Skills:</label>
+                                <input type="text" name="skills" id="skills" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <button class="form-button" type="button">POST A PROJECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </main>
+</body>
+
+</html>

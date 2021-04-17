@@ -1,0 +1,131 @@
+@import url(style.css);
+@import url(grid.css);
+@import url(projects.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+.form {
+    padding: 20px;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-area {
+    width: 950px;
+}
+
+.form-title {
+    height: 40px;
+    line-height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #364e65;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(133, 153, 171, 0.2);
+    padding-top: 2px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 13px;
+    color: #8599ab;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    font-size: 14px;
+    color: #364e65;
+    padding: 0 15px;
+    transition: 0.4s;
+}
+
+.form-input:focus {
+    border-color: #3796f6;
+}
+
+.form-textarea {
+    width: 100%;
+    height: 140px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    font-size: 14px;
+    color: #364e65;
+    padding: 10px 15px;
+    resize: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: inherit;
+}
+
+.form-textarea:focus {
+    border-color: #3796f6;
+}
+
+.form-select {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fafafa;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    font-size: 14px;
+    color: #364e65;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    outline: none;
+}
+
+.form-select:focus {
+    border-color: #3796f6;
+}
+
+.form-selects {
+    display: flex;
+}
+
+.form.group.category {
+    margin-right: 30px;
+}
+
+.form-min-max {
+    display: flex;
+}
+
+.form-input.min {
+    margin-right: 30px;
+}
+
+.form-button {
+    width: 160px;
+    height: 40px;
+    background-color: #3796f6;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.form-button:hover {
+    color: #3796f6;
+    background: linear-gradient( 45deg, rgba(55, 150, 246, 0.5) 0%, rgba(55, 150, 246, 0.05) 100%);
+}
