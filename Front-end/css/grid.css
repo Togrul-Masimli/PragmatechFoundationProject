@@ -6,6 +6,7 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-1 {

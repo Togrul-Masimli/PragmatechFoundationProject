@@ -1,6 +1,20 @@
 @import url(style.css);
 @import url(grid.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+.row,
+.container {
+    height: 100vh;
+}
+
+.d-flex-alg-center {
+    display: flex;
+    align-items: center;
+}
+
+.alg-center {
+    align-items: center;
+}
+
 .sign {
     height: 100vh;
     display: block;
@@ -60,6 +74,10 @@
     font-size: 14px;
     color: #364e65;
     padding: 0 15px;
+}
+
+.sign-input:focus {
+    border-color: #3796f6;
 }
 
 .sign-group-checkbox {

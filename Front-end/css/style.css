@@ -27,7 +27,8 @@ input:focus {
 }
 
 a,
-button {
+button,
+input {
     transition: 0.4s;
 }
 
