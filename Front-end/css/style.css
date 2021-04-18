@@ -22,6 +22,15 @@ img {
     height: auto;
 }
 
+input:focus {
+    outline: none;
+}
+
+a,
+button {
+    transition: 0.4s;
+}
+
 
 /* Common Styles */
 
