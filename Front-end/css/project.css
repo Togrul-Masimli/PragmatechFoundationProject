@@ -3,16 +3,13 @@
 @import url(projects.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
 .form {
+    width: 950px;
     padding: 20px;
     border: 1px solid rgba(133, 153, 171, 0.2);
     box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
     border-radius: 4px;
     background-color: #fff;
     margin-bottom: 20px;
-}
-
-.form-area {
-    width: 950px;
 }
 
 .form-title {
@@ -33,6 +30,10 @@
     margin-bottom: 20px;
 }
 
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
 .form-label {
     display: inline-block;
     font-size: 13px;
@@ -50,6 +51,11 @@
     color: #364e65;
     padding: 0 15px;
     transition: 0.4s;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #8599AB;
 }
 
 .form-input:focus {
@@ -97,7 +103,7 @@
     display: flex;
 }
 
-.form.group.category {
+.form-group.category {
     margin-right: 30px;
 }
 
@@ -116,7 +122,6 @@
     color: #fff;
     font-size: 13px;
     border-radius: 4px;
-    letter-spacing: 0.4px;
     font-weight: 600;
     margin-top: 10px;
     border: none;
@@ -128,4 +133,32 @@
 .form-button:hover {
     color: #3796f6;
     background: linear-gradient( 45deg, rgba(55, 150, 246, 0.5) 0%, rgba(55, 150, 246, 0.05) 100%);
+}
+
+.sidebox-desk {
+    margin-left: 25px;
+}
+
+.sidebox-faq {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sidebox-faq:last-child {
+    margin-bottom: 0;
+}
+
+.sidebox-faq h5 {
+    font-size: 15px;
+    color: #364e65;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 7px;
+}
+
+.sidebox-faq p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #8599AB;
+    margin-bottom: 0;
 }
