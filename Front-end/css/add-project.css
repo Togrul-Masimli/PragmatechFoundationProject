@@ -58,7 +58,9 @@
     color: #8599AB;
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
     border-color: #3796f6;
 }
 
@@ -77,10 +79,6 @@
     font-family: inherit;
 }
 
-.form-textarea:focus {
-    border-color: #3796f6;
-}
-
 .form-select {
     width: 100%;
     height: 40px;
@@ -95,20 +93,8 @@
     outline: none;
 }
 
-.form-select:focus {
-    border-color: #3796f6;
-}
-
-.form-selects {
-    display: flex;
-}
-
 .form-group.category {
     margin-right: 30px;
-}
-
-.form-min-max {
-    display: flex;
 }
 
 .form-input.min {
