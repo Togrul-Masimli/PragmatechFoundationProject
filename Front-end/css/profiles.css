@@ -1,0 +1,71 @@
+@import url(style.css);
+@import url(grid.css);
+@import url(projects.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid rgba(133, 153, 171, 0.2);
+    box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
+    border-radius: 4px;
+    padding: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.profiles-top {
+    display: flex;
+}
+
+.profile-user-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-user-title {
+    height: 60px;
+    padding-left: 15px;
+}
+
+.prefiles-user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #364e65;
+}
+
+.profile-user-title {
+    font-size: 14px;
+    line-height: 24px;
+    color: #8599ab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-icons i {
+    font-size: 16px;
+    color: #5bceae;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.profile-icons .location-span {
+    font-size: 14px;
+    color: #8599ab;
+}
