@@ -465,6 +465,9 @@ a.logo img {
 
 .post-actions .btn-green:hover {
     background: linear-gradient( 45deg, rgba(91, 206, 174, 0.5) 0%, rgba(91, 206, 174, 0.05) 100%);
+}
+
+.post-actions .btn-green:hover i {
     color: #5bceae;
 }
 
@@ -473,7 +476,7 @@ a.logo img {
 }
 
 .bid-now {
-    display: inline-flex;
+    display: inline-block;
     height: 30px;
     align-items: center;
     justify-content: center;
@@ -486,8 +489,10 @@ a.logo img {
 }
 
 .bid-now span {
+    display: block;
     color: #fff;
     font-size: 13px;
+    margin: 0 auto;
 }
 
 .post-icons .post-icons-right .post-actions i {

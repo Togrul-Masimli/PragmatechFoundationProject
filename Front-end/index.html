@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Job Board</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -217,7 +218,7 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <button class="accordion">
+                                            <button class="accordion" data-filter="comment1">
                                                 <i class="fas fa-comment"></i>
                                                 </button>
                                             <span>2</span>
@@ -229,7 +230,7 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment">
+                            <div class="comment comment1" style="display: none;">
                                 <form action="#" class="comment-form">
                                     <input type="text" placeholder="Type your comment...">
                                     <button type="button">

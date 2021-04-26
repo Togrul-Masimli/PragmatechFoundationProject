@@ -10,11 +10,13 @@
 });
 */
 
-let accordion = document.querySelectorAll('.accordion');
+/*
+let post = document.querySelectorAll('.post');
+let accordion = post.querySelectorAll('.accordion');
 
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', () => {
-        let comment = document.querySelector('.comment');
+        let comment = post.querySelector('.comment');
         if (comment.style.maxHeight) {
             comment.style.maxHeight = null;
         } else {
@@ -22,10 +24,11 @@ for (let i = 0; i < accordion.length; i++) {
         }
     })
 }
+*/
 
 
 /*
-document.querySelector('.col-6').addEventListener('click', (e) => {
+document.querySelector('.post').addEventListener('click', (e) => {
     if (e.target.getAttribute('class') == 'accordion') {
         if (document.querySelector('.comment').style.maxHeight) {
             document.querySelector('.comment').style.maxHeight = null;
@@ -41,5 +44,14 @@ document.querySelector('.to-top').addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
+    })
+});
+
+
+$(document).ready(function() {
+    $(".accordion").click(function() {
+        const value = $(this).attr("data-filter")
+        $(".comment").not('.' + value).hide(1000);
+        $(".comment").filter('.' + value).show(1000);
     })
 });
