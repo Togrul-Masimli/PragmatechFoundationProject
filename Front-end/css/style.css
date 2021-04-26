@@ -781,12 +781,6 @@ a.logo img {
     color: inherit;
 }
 
-.comment {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s max-height;
-}
-
 .non-active {
     color: inherit;
 }
@@ -955,4 +949,30 @@ a.logo img {
     font-size: 14px;
     line-height: 24px;
     color: #8599ab;
+}
+
+
+/* Resuable load more */
+
+.more-post {
+    margin: 40px auto;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #3796F6;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.more-post:hover {
+    background: linear-gradient( 45deg, rgba(55, 150, 246, 0.5) 0%, rgba(55, 150, 246, 0.05) 100%);
+    color: #3796F6;
 }

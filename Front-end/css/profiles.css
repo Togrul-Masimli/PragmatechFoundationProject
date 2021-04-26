@@ -148,3 +148,7 @@
 .hire:hover span {
     color: #3796F6;
 }
+
+.more-post {
+    margin: 10px auto 40px;
+}

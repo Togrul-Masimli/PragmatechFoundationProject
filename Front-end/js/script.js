@@ -51,7 +51,7 @@ document.querySelector('.to-top').addEventListener('click', () => {
 $(document).ready(function() {
     $(".accordion").click(function() {
         const value = $(this).attr("data-filter")
-        $(".comment").not('.' + value).hide(1000);
-        $(".comment").filter('.' + value).show(1000);
+            // $(".comment").not('.' + value).hide(1000);
+        $(".comment").filter('.' + value).toggle(1000);
     })
 });
