@@ -864,6 +864,10 @@ a.logo img {
     width: 100%;
 }
 
+.active {
+    color: #5bceae;
+}
+
 .comment-form {
     display: block;
     display: flex;
@@ -948,6 +952,11 @@ a.logo img {
 .comment-text p {
     font-size: 14px;
     line-height: 24px;
+    color: #8599ab;
+}
+
+.accordion i,
+.like-comment span {
     color: #8599ab;
 }
 

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
     <title>Job Board</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
@@ -57,8 +57,17 @@
         </div>
     </header>
     <main>
-        <div class="content">
+        <div class="arrow-content">
             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="page-to-page">
+                            <li class="page_home"><a href="#">Home</a></li>
+                            <span><i class="fas fa-long-arrow-alt-right"></i></span>
+                            <li class="page_projects"><a href="#">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-3">
                         <div class="user-info box">
@@ -69,9 +78,44 @@
                                 <span class="user-name-span">John Doe</span>
                                 <span class="speciality">Front-end Developer</span>
                             </div>
-                            <div class="button-field">
-                                <a href="#" class="btn-project">Post a project</a>
-                                <a href="#" class="btn-job">Post a job</a>
+                            <div class="profile-buttons profiles-bottom">
+                                <div class="profile-icons">
+                                    <div>
+                                        <i class="fas fa-compass"></i>
+                                        <span class="location-span">Vietnam</span>
+                                    </div>
+                                    <div class="profile-actions">
+                                        <a href="#" class="green-btn">
+                                            <i class="fas fa-bookmark"></i>
+                                        </a>
+                                        <a href="#" class="red-btn">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="hire">
+                                            <span>Hire</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-user">
+                                <ul class="info-about-user">
+                                    <li>
+                                        <span>Hourly Rate:</span>
+                                        <span>$50 / hr</span>
+                                    </li>
+                                    <li>
+                                        <span>Age:</span>
+                                        <span>21</span>
+                                    </li>
+                                    <li>
+                                        <span>Experience:</span>
+                                        <span>5 Year</span>
+                                    </li>
+                                    <li>
+                                        <span>Job Done:</span>
+                                        <span>113</span>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="follow">
                                 <div class="follow-count count-common">
@@ -83,78 +127,39 @@
                                     <span class="count">88</span>
                                 </div>
                             </div>
-                            <a href="#" class="view-profile">View profile</a>
                         </div>
-                        <div class="sidebox-candidates sidebox">
-                            <div class="sidebox-title">
-                                <h4>Best candidates</h4>
-                            </div>
-                            <div class="sidebox-content">
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user7.jpg" alt="user-img">
+                        <div class="sidebox-social sidebox">
+                            <span>Share:</span>
+                            <ul>
+                                <li class="facebook">
+                                    <a href="#">
+                                        <img src="img/Facebook.png" alt="">
                                     </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Andy Ramos</a>
-                                        </h5>
-                                        <p>Secretary</p>
-                                    </div>
-                                    <div class="user-title-price">$99/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user1.jpg" alt="user-img">
+                                </li>
+                                <li class="instagram">
+                                    <a href="#">
+                                        <img src="img/Instagram.png" alt="">
                                     </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Tony Young</a>
-                                        </h5>
-                                        <p>Herbalist</p>
-                                    </div>
-                                    <div class="user-title-price">$112/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user2.jpg" alt="user-img">
+                                </li>
+                                <li class="twitter">
+                                    <a href="#">
+                                        <img src="img/Twitter.png" alt="">
                                     </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Santiago Robinson</a>
-                                        </h5>
-                                        <p>Fashion Designer</p>
-                                    </div>
-                                    <div class="user-title-price">$133/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user3.jpg" alt="user-img">
+                                </li>
+                                <li class="vkontakte">
+                                    <a href="#">
+                                        <img src="img/Vkontakte.png" alt="">
                                     </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Sophia Mendoza</a>
-                                        </h5>
-                                        <p>Teaching assistant</p>
-                                    </div>
-                                    <div class="user-title-price">$80/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user4.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Marsha Baldwin</a>
-                                        </h5>
-                                        <p>Gardener</p>
-                                    </div>
-                                    <div class="user-title-price">$99/hr</div>
-                                </div>
-                            </div>
-                            <a href="#" class="view-profile">View more</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-6">
+                        <ul class="profile-nav">
+                            <li><a href="#">Feed</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
                         <div class="post">
                             <div class="post-header">
                                 <a href="#" class="post-user-img">
@@ -334,10 +339,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <button class="accordion" data-filter="comment2">
+                                            <button class="accordion" data-filter="comment1">
                                                 <i class="fas fa-comment"></i>
-                                                </button>
-                                            <span>0</span>
+                                            </button>
+                                            <span>2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -346,13 +351,45 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment comment2" style="display: none;">
+                            <div class="comment comment1" style="display: none;">
                                 <form action="#" class="comment-form">
                                     <input type="text" placeholder="Type your comment...">
                                     <button type="button">
                                         <i class="fab fa-telegram-plane"></i>
                                     </button>
                                 </form>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user9.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Alan Patrick</h5>
+                                                <p>20 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user2.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Diego Costa</h5>
+                                                <p>22 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -418,10 +455,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <button class="accordion" data-filter="comment3">
-                                                <i class="fas fa-comment comment-button"></i>
+                                            <button class="accordion" data-filter="comment1">
+                                                <i class="fas fa-comment"></i>
                                             </button>
-                                            <span>0</span>
+                                            <span>2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -430,19 +467,51 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment comment3" style="display: none;">
+                            <div class="comment comment1" style="display: none;">
                                 <form action="#" class="comment-form">
                                     <input type="text" placeholder="Type your comment...">
                                     <button type="button">
                                         <i class="fab fa-telegram-plane"></i>
                                     </button>
                                 </form>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user9.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Alan Patrick</h5>
+                                                <p>20 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user2.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Diego Costa</h5>
+                                                <p>22 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <button class="more-post" type="button">Load more</button>
                     </div>
                     <div class="col-3">
-                        <div class="sidebox hot-projects">
+                        <div class="profile-sidebox sidebox hot-projects">
                             <div class="sidebox-title">
                                 <h4>Hot projects</h4>
                             </div>
@@ -500,74 +569,6 @@
                             </div>
                             <a href="#" class="view-profile">View more</a>
                         </div>
-                        <div class="sidebox-candidates-right sidebox-candidates sidebox">
-                            <div class="sidebox-title">
-                                <h4>New candidates</h4>
-                            </div>
-                            <div class="sidebox-content">
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user3.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Marsha Baldwin</a>
-                                        </h5>
-                                        <p>Secretary</p>
-                                    </div>
-                                    <div class="user-title-price">$99/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user2.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Tony Young</a>
-                                        </h5>
-                                        <p>Herbalist</p>
-                                    </div>
-                                    <div class="user-title-price">$112/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user9.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Santiago Robinson</a>
-                                        </h5>
-                                        <p>Fashion Designer</p>
-                                    </div>
-                                    <div class="user-title-price">$133/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user4.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Sophia Mendoza</a>
-                                        </h5>
-                                        <p>Teaching assistant</p>
-                                    </div>
-                                    <div class="user-title-price">$80/hr</div>
-                                </div>
-                                <div class="sidebox-user">
-                                    <a href="#" class="sidebox-user-img">
-                                        <img src="img/user6.jpg" alt="user-img">
-                                    </a>
-                                    <div class="sidebox-user-title">
-                                        <h5>
-                                            <a href="#">Marsha Baldwin</a>
-                                        </h5>
-                                        <p>Gardener</p>
-                                    </div>
-                                    <div class="user-title-price">$99/hr</div>
-                                </div>
-                            </div>
-                            <a href="#" class="view-profile">View more</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -601,5 +602,3 @@
     </footer>
     <script src="js/script.js"></script>
 </body>
-
-</html>
