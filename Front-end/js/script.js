@@ -13,6 +13,14 @@ $(document).ready(function() {
     })
 });
 
+$(document).ready(function() {
+    $(".profile-filter").click(function() {
+        const value = $(this).attr("data-filter")
+        $(".toggle").not('.' + value).hide(700);
+        $(".toggle").filter('.' + value).show(700);
+    })
+});
+
 
 var comments = document.querySelectorAll('.comment-button');
 
