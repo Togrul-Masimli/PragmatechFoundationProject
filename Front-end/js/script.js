@@ -9,24 +9,14 @@ document.querySelector('.to-top').addEventListener('click', () => {
 $(document).ready(function() {
     $(".accordion").click(function() {
         const value = $(this).attr("data-filter")
-        $(".comment").filter('.' + value).toggle(700);
+        $(".comment").filter('.' + value).toggle(500);
     })
 });
 
 $(document).ready(function() {
     $(".profile-filter").click(function() {
-        const value = $(this).attr("data-filter")
-        $(".toggle").not('.' + value).hide(700);
-        $(".toggle").filter('.' + value).show(700);
+        const item = $(this).attr("data-filter")
+        $(".toggle").not('.' + item).hide(700);
+        $(".toggle").filter('.' + item).show(700);
     })
 });
-
-
-var comments = document.querySelectorAll('.comment-button');
-
-for (let i = 0; i < comments.length; i++) {
-    comments[i].addEventListener('click', () => {
-        this.classList.toggle("active");
-    })
-
-}

@@ -7,7 +7,7 @@
     margin-left: 0;
 }
 
-.post-description ul {
+.post-description-ul {
     font-size: 14px;
     line-height: 24px;
     color: #8599ab;
@@ -15,12 +15,12 @@
     margin-bottom: 15px;
 }
 
-.post-description ul li {
+.post-description-ul li {
     padding-left: 20px;
     position: relative;
 }
 
-.post-description ul li::before {
+.post-description-ul li::before {
     content: '';
     display: block;
     position: absolute;
