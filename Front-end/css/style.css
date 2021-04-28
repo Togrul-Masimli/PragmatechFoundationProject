@@ -199,6 +199,41 @@ a.logo img {
     font-weight: 600;
 }
 
+.hasDropdown {
+    position: relative;
+}
+
+
+/* Dropdown */
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    min-width: 180px;
+    border-right: 1px solid rgba(133, 153, 171, 0.2);
+    border-left: 1px solid rgba(133, 153, 171, 0.2);
+    border-bottom: 1px solid rgba(133, 153, 171, 0.2);
+    box-shadow: 0 2px 26px 0 rgb(133 153 171 / 10%);
+    border-top: 2px solid #3796f6;
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.opc-1 {
+    opacity: 1 !important;
+}
+
+.dropdown li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #364e65;
+    line-height: 36px;
+}
+
 
 /* Content */
 
@@ -785,12 +820,16 @@ a.logo img {
     color: inherit;
 }
 
-.active {
-    color: dodgerblue;
+.comment-active {
+    color: #3796F6 !important;
 }
 
-.inactive {
-    color: #8599ab;
+.heart-active {
+    color: #EC547A;
+}
+
+.fa-heart:hover {
+    color: #EC547A;
 }
 
 .footer {
