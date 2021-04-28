@@ -2,7 +2,12 @@
 @import url(grid.css);
 @import url(projects.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+.projects-content {
+    padding-top: 88px;
+}
+
 .form {
+    padding-top: 110px;
     width: 950px;
     padding: 20px;
     border: 1px solid rgba(133, 153, 171, 0.2);

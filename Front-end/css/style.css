@@ -789,6 +789,10 @@ a.logo img {
     color: dodgerblue;
 }
 
+.inactive {
+    color: #8599ab;
+}
+
 .footer {
     background-color: #fff;
     border-top: 1px solid rgba(133, 153, 171, 0.2);

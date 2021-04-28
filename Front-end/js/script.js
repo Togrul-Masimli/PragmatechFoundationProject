@@ -20,3 +20,7 @@ $(document).ready(function() {
         $(".toggle").filter('.' + item).show(700);
     })
 });
+
+document.querySelector('.fas.fa-comment').addEventListener('click', () => {
+    document.querySelector('.fas.fa-comment').classList.toggle('.active');
+});
