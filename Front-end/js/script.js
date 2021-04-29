@@ -44,6 +44,8 @@ $('.fa-heart').click(function() {
         $(this).addClass("heart-active")
 });
 
+/* For dropdown */
+
 document.querySelector('.dropdown-container').addEventListener('click', () => {
     if (document.querySelector('.dropdown-container').nextElementSibling.style.opacity == "1") {
         document.querySelector('.dropdown-container').nextElementSibling.style.opacity = "0";

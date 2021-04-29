@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/projects.css">
     <title>Projects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,12 +21,17 @@
                         <img src="img/logo.svg" alt="logo">
                     </a>
                     <ul class="navbar">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Companies</a></li>
-                        <li><a href="#">Profiles</a></li>
-                        <li><a href="#">Pages</a></li>
+                        <li><a href="add-project.html">Post a project</a></li>
+                        <li><a href="profiles.html">Profiles</a></li>
+                        <li class="hasDropdown"><a href="#" class="dropdown-container">Pages
+                        <ul class="dropdown">
+                            <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="sign-in.html">Sing In</a></li>
+                        <li><a href="sign-up.html">Sing Up</a></li>
+                        <li><a href="forgot-password.html">ForgotPassword</a></li>
+                    </ul>
                     </ul>
                 </div>
                 <div class="col-6 nav-right">
@@ -180,12 +186,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <a href="#">
-                                                <button class="accordion">
+                                            <button class="accordion" data-filter="comment1">
                                                 <i class="fas fa-comment"></i>
-                                                </button>
-                                                <span>0</span>
-                                            </a>
+                                            </button>
+                                            <span>2</span>
                                         </div>
                                     </div>
                                 </div>
@@ -194,8 +198,45 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <p class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero facilis minima aliquid eaque quis, autem, debitis, quaerat quod ratione temporibus! Harum nihil ullam et nemo aliquid aliquam tempora iusto!</p>
+                            <div class="comment comment1" style="display: none;">
+                                <form action="#" class="comment-form">
+                                    <input type="text" placeholder="Type your comment...">
+                                    <button type="button">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </button>
+                                </form>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user9.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Alan Patrick</h5>
+                                                <p>20 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-area">
+                                    <div class="comment-content">
+                                        <div class="comment-photo-text">
+                                            <a href="#" class="comment-photo">
+                                                <img src="img/user2.jpg" alt="profile_photo">
+                                            </a>
+                                            <div class="user-comment">
+                                                <h5>Diego Costa</h5>
+                                                <p>22 min ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="post">
@@ -261,12 +302,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <a href="#">
-                                                <button class="accordion">
+                                            <button class="accordion" data-filter="comment2">
                                                 <i class="fas fa-comment"></i>
                                                 </button>
-                                                <span>0</span>
-                                            </a>
+                                            <span>0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -275,8 +314,13 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <p class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero facilis minima aliquid eaque quis, autem, debitis, quaerat quod ratione temporibus! Harum nihil ullam et nemo aliquid aliquam tempora iusto!</p>
+                            <div class="comment comment2" style="display: none;">
+                                <form action="#" class="comment-form">
+                                    <input type="text" placeholder="Type your comment...">
+                                    <button type="button">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
                         <div class="post">
@@ -342,12 +386,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <a href="#">
-                                                <button class="accordion">
-                                                <i class="fas fa-comment"></i>
-                                                </button>
-                                                <span>0</span>
-                                            </a>
+                                            <button class="accordion" data-filter="comment3">
+                                                <i class="fas fa-comment comment-button"></i>
+                                            </button>
+                                            <span>0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -356,8 +398,13 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <p class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero facilis minima aliquid eaque quis, autem, debitis, quaerat quod ratione temporibus! Harum nihil ullam et nemo aliquid aliquam tempora iusto!</p>
+                            <div class="comment comment3" style="display: none;">
+                                <form action="#" class="comment-form">
+                                    <input type="text" placeholder="Type your comment...">
+                                    <button type="button">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
                         <div class="post">
@@ -423,12 +470,10 @@
                                     </div>
                                     <div class="post-comments">
                                         <div class="like-comment">
-                                            <a href="#">
-                                                <button class="accordion">
+                                            <button class="accordion" data-filter="comment4">
                                                 <i class="fas fa-comment"></i>
                                                 </button>
-                                                <span>0</span>
-                                            </a>
+                                            <span>0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -437,8 +482,13 @@
                                     <span>214</span>
                                 </div>
                             </div>
-                            <div class="comment">
-                                <p class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero facilis minima aliquid eaque quis, autem, debitis, quaerat quod ratione temporibus! Harum nihil ullam et nemo aliquid aliquam tempora iusto!</p>
+                            <div class="comment comment4" style="display: none;">
+                                <form action="#" class="comment-form">
+                                    <input type="text" placeholder="Type your comment...">
+                                    <button type="button">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
                         <button class="more-post" type="button">Load more</button>

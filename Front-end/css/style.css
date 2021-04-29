@@ -223,15 +223,24 @@ a.logo img {
     transition: 0.4s;
 }
 
-.opc-1 {
-    opacity: 1 !important;
-}
-
 .dropdown li a {
     font-size: 14px;
     font-weight: 400;
     color: #364e65;
     line-height: 36px;
+}
+
+
+/* Bell Dropdown */
+
+.header-contact {
+    position: relative;
+}
+
+.bell {
+    position: absolute;
+    top: 120%;
+    right: 500px;
 }
 
 
