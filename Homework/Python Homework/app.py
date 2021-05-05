@@ -177,39 +177,91 @@ import random
 
 # 13.
 
-name = input("Adinizi daxil edin: ")
+# name = input("Adinizi daxil edin: ")
 
-if len(name) < 3 or len(name) > 11:
-    print("Adinizin uzunlugu 3 den az 11 den cox ola bilmez.")
-else:
-    surname = input("Soyadinizi daxil edin: ")
-    if len(surname) < 5 or len(surname) > 15:
-        print("Soyadinizin uzunlugu 5 den az 15 den cox ola bilmez.")
-    else:
-        birth_year = input("Dogum ilinizi daxil edin: ")
-        if len(birth_year) != 4:
-            print("Dogum ilinizi 4 mertebeli reqemden yuxari ola bilmez.")
-        else:
-            email = input("Email-inizi daxil edin: ")
-            if len(email) < 10 or len(email) > 22:
-                print("Emailinizin uzunlugu 10 dan az 22 den yuxari ola bilmez.")
-            elif not(email.endswith("@gmail.com")):
-                print('Emailinizin sonu "@gmail.com" la bitmelidir.')
-            else:
-                password = input("Parolunuzu daxil edin: ")
-                if len(password) < 6 or len(password) > 13:
-                    print("Kod 6-13 arasi uzunluqda olmalidir.")
-                else:
-                    password1 = input("Parolunuzu tesdiq edin: ")
-                    if password != password1:
-                        print("Tesdiqleme parolu parolla eyni deyil")
-                    else:
-                        print("Qeydiyyat tamamlandi!")
-                        print("Qeydiyyat detallarina baxmaq isteyirsiz?")
-                        answer = input()
-                        if answer == "he":
-                            print("==========================================================================")
-                            print(f"Ad: {name} Soyad: {surname} Yas: {2021 - int(birth_year)} Email: {email} Parol: {password}")
-                            print("==========================================================================")
-                        elif answer == "yox":
-                            print(f"{name} {surname}, Ugurlar!")
+# if len(name) < 3 or len(name) > 11:
+#     print("Adinizin uzunlugu 3 den az 11 den cox ola bilmez.")
+# else:
+#     surname = input("Soyadinizi daxil edin: ")
+#     if len(surname) < 5 or len(surname) > 15:
+#         print("Soyadinizin uzunlugu 5 den az 15 den cox ola bilmez.")
+#     else:
+#         birth_year = input("Dogum ilinizi daxil edin: ")
+#         if len(birth_year) != 4:
+#             print("Dogum ilinizi 4 mertebeli reqemden yuxari ola bilmez.")
+#         else:
+#             email = input("Email-inizi daxil edin: ")
+#             if len(email) < 10 or len(email) > 22:
+#                 print("Emailinizin uzunlugu 10 dan az 22 den yuxari ola bilmez.")
+#             elif not(email.endswith("@gmail.com")):
+#                 print('Emailinizin sonu "@gmail.com" la bitmelidir.')
+#             else:
+#                 password = input("Parolunuzu daxil edin: ")
+#                 if len(password) < 6 or len(password) > 13:
+#                     print("Kod 6-13 arasi uzunluqda olmalidir.")
+#                 else:
+#                     password1 = input("Parolunuzu tesdiq edin: ")
+#                     if password != password1:
+#                         print("Tesdiqleme parolu parolla eyni deyil")
+#                     else:
+#                         print("Qeydiyyat tamamlandi!")
+#                         print("Qeydiyyat detallarina baxmaq isteyirsiz?")
+#                         answer = input()
+#                         if answer == "he":
+#                             print("==========================================================================")
+#                             print(f"Ad: {name} Soyad: {surname} Yas: {2021 - int(birth_year)} Email: {email} Parol: {password}")
+#                             print("==========================================================================")
+#                         elif answer == "yox":
+#                             print(f"{name} {surname}, Ugurlar!")
+
+
+# Homework 3
+
+# 1.
+
+# mylist = [1,2,3,4,5,6]
+# cem = 0
+
+# for x in mylist:
+#     cem = cem + x
+
+# print(cem)
+
+# 2.
+
+# mylist = [1,2,15,4,5,6]
+# maximum = 0
+
+# for x in mylist:
+#     if x > maximum:
+#         maximum = x
+    
+# print(maximum)
+
+# 3.
+
+# mylist = [5,2,15,4,1,6]
+# minimum = mylist[0]
+
+# for x in mylist:
+#     if x < minimum:
+#         minimum = x
+    
+# print(minimum)
+
+# 4.
+
+# mylist = ['abc', 'xyz', 'aba', '1221']
+
+# for x in mylist:
+#     if len(x) >= 2 and x[0] == x[-1]:
+#         print(x)
+
+# 5.
+
+# mylist = []
+
+# if bool(mylist):
+#     print("List is not empty")
+# else:
+#     print("List is empty")
