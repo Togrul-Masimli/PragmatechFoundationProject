@@ -187,7 +187,7 @@ else:
         print("Soyadinizin uzunlugu 5 den az 15 den cox ola bilmez.")
     else:
         birth_year = input("Dogum ilinizi daxil edin: ")
-        if len(birth_year) > 4:
+        if len(birth_year) != 4:
             print("Dogum ilinizi 4 mertebeli reqemden yuxari ola bilmez.")
         else:
             email = input("Email-inizi daxil edin: ")
