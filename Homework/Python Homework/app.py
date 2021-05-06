@@ -268,19 +268,20 @@ import random
 
 # 6.
 
-fruits = ("apple","cherry", "blackberry", "banana", "kiwi")
+# fruits = ("apple","cherry", "blackberry", "banana", "kiwi")
 
-for x in fruits:
-    print(x)
+# for x in fruits:
+#     print(x)
 
-print("============")
+# print("============")
 
-fruits_list = list(fruits)
-fruits_list[1:4] = ["mango", "tea", "coffee"]
-fruits = tuple(fruits_list)
+# fruits_list = list(fruits)
+# fruits_list[1:4] = ["mango", "tea", "coffee"]
+# fruits = tuple(fruits_list)
 
-for x in fruits:
-    print(x)
+# for x in fruits:
+#     print(x)
+
 # 7.
 
 # mylist = ["Togrul","Ahmed","admin","Fuad","Elnur"]
@@ -290,3 +291,91 @@ for x in fruits:
 #         print("Hello admin, would you like to see a status report?")
 #     else:
 #         print(f"Hello {name}, thank you for logging in again.")
+
+# Homework 4
+
+# 1.
+
+# def my_function(my_list):
+#     cem = 0
+#     for x in my_list:
+#         cem = cem + x
+#     print(cem)
+
+# new_list = [1,2,3,4,5]
+# my_function(new_list)
+
+# 2.
+
+# def my_function(my_list):
+#     hasil = 1
+#     for x in my_list:
+#         hasil = hasil * x
+#     print(hasil)
+
+# new_list = [1,2,3,-4,5]
+# my_function(new_list)
+
+# 3.
+
+# def returnDay(day):
+#     if 1 <= day <= 7:
+#         if day == 1:
+#             print('1 is Sunday')
+#         elif day == 2:
+#             print('2 is Monday')
+#         elif day == 3:
+#             print('3 is Tuesday')
+#         elif day == 4:
+#             print('4 is Wednesday')
+#         elif day == 5:
+#             print('5 is Thursday')
+#         elif day == 6:
+#             print('6 is Friday')
+#         elif day == 7:
+#             print('7 is Saturday')
+#     else:
+#         return None
+
+# number = int(input())
+# returnDay(number)
+
+# 4.
+
+# def lastElement(somelist):
+#     if somelist:
+#         return somelist[-1]
+#     return None
+
+# my_list = [1,2,3,15]
+# this_list = []
+
+# print(lastElement(my_list))
+# print(lastElement(this_list))
+
+# 5.
+
+# def my_function(somelist):
+#     for x in somelist:
+#         if x%2 == 0:
+#             print(x, end=" ")
+
+# this_list = [1,2,3,4,5,6]
+# my_function(this_list)
+
+# 6.
+
+# def showEmployee(name, salary = 9000):
+#     print(name,salary)
+
+# showEmployee("John")
+
+# 7.
+
+def addition(*numbers):
+    cem = 0
+    for x in numbers:
+        cem = cem + x
+    return cem
+
+print(addition(1,2,3,4,5,100))
