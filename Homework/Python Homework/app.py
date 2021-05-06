@@ -265,3 +265,28 @@ import random
 #     print("List is not empty")
 # else:
 #     print("List is empty")
+
+# 6.
+
+fruits = ("apple","cherry", "blackberry", "banana", "kiwi")
+
+for x in fruits:
+    print(x)
+
+print("============")
+
+fruits_list = list(fruits)
+fruits_list[1:4] = ["mango", "tea", "coffee"]
+fruits = tuple(fruits_list)
+
+for x in fruits:
+    print(x)
+# 7.
+
+# mylist = ["Togrul","Ahmed","admin","Fuad","Elnur"]
+
+# for name in mylist:
+#     if name == "admin":
+#         print("Hello admin, would you like to see a status report?")
+#     else:
+#         print(f"Hello {name}, thank you for logging in again.")
