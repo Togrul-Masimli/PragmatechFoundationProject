@@ -1,4 +1,5 @@
 import random
+import math
 # mesaj = 'Hello World!'
 # print(mesaj)
 
@@ -372,10 +373,56 @@ import random
 
 # 7.
 
-def addition(*numbers):
-    cem = 0
-    for x in numbers:
-        cem = cem + x
-    return cem
+# def addition(*numbers):
+#     cem = 0
+#     for x in numbers:
+#         cem = cem + x
+#     return cem
 
-print(addition(1,2,3,4,5,100))
+# print(addition(1,2,3,4,5,100))
+
+
+# courses = ['History', 'Math', 'CompSci', 'Art']
+
+# for index, course in enumerate(courses):
+#     print(index,course)
+
+# temperature = int(input())
+
+# if temperature < 0:
+#     print('Cox soyuq')
+# elif 0 <= temperature <= 10:
+#     print('Soyuq')
+# else:
+#     print('Isti')
+
+# def func(number):
+#     if number > 0:
+#         print("Musbet")
+#     else:
+#         print("Menfi")
+
+# number1 = int(input())
+# func(number1)
+
+# number = int(input())
+# x = 0
+# my_list = []
+
+# while x < number:
+#     number1 = int(input())
+#     if number1 % 2 == 0:
+#         my_list.append(number1)
+#     x += 1
+    
+# print(my_list)
+
+# def func(somelist):
+#     somelist.pop(0)
+#     print(somelist)
+
+# my_list = [1,2,3,4,5]
+# func(my_list)
+
+my_float = 5.98
+print(my_float//1)
