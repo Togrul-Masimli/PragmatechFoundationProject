@@ -54,6 +54,10 @@ li {
     flex-wrap: wrap;
 }
 
+.ml-0 {
+    margin-left: 0;
+}
+
 
 /* Header */
 
@@ -150,7 +154,8 @@ a.logo img {
     color: #007bff;
 }
 
-.header-contact a {
+
+/* .header-contact a {
     display: inline-block;
     margin-top: 22px;
     margin-right: 27px;
@@ -170,7 +175,7 @@ a.logo img {
     background-color: #3796f6;
     border-radius: 50%;
     border: 1px solid #dadedf;
-}
+} */
 
 .header-contact a:hover {
     color: rgba(255, 255, 255, 0.6);
@@ -1036,4 +1041,24 @@ a.logo img {
 .more-post:hover {
     background: linear-gradient( 45deg, rgba(55, 150, 246, 0.5) 0%, rgba(55, 150, 246, 0.05) 100%);
     color: #3796F6;
+}
+
+.new-projects {
+    margin-left: 0px;
+}
+
+.login-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 35px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
 }
